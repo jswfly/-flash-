@@ -1,4 +1,3 @@
-/**  * Created by archibald on 2015/4/17.  */ 
 window.onload=function(){     
 	var oPlay=document.getElementById('playImages');     
 	var uBig=getClass(oPlay,'big_pic')[0];     
