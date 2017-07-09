@@ -1,0 +1,128 @@
+body{  
+	margin: 0px;  
+	padding: 0px;  
+} 
+ 
+ul{  
+	margin: 0px;  
+	padding: 0px;  
+}  
+
+li{  
+	list-style: none;  
+} 
+.play{ 
+	width: 600px;  
+	height: 550px;  
+	border: 2px solid gray; 
+	position: relative;   
+	margin: 0 auto;
+	margin-top: 20px;
+} 
+
+.big_pic{  
+	width: 600px;  
+	height: 400px; 
+	position: relative;  
+	background: snow;  
+	overflow: hidden;  
+} 
+
+/*设置优先级最上面的z-index为1,其他为0， 轮播的时候只要把需要的图片优先级设为1就行了*/
+.big_pic li{  
+	width: 600px;  
+	height: 400px;  
+	overflow:hidden; 
+	position: absolute;  
+	background: black; 
+	z-index: 0;	
+} 
+
+.big_pic li img{  
+	width: 600px;  
+	height: 400px;  
+	position: absolute;  
+} 
+
+.mark_left{  
+	width: 300px;  
+	height: 400px;  
+	background: orange;  
+	position: absolute;  
+	left: 0px;  
+	top: 0px;  
+	z-index: 3000;  
+	 /*隐藏，相当于display：none*/
+	filter: alpha(opacity:0);  
+	opacity: 0;  
+} 
+
+.mark_right{  
+	width: 300px;  
+	height: 400px;  
+	background: aquamarine;  
+	position: absolute;  
+	left: 300px;  
+	top: 0px;  
+	z-index: 3000;  
+	filter: alpha(opacity:0);  
+	opacity: 0;  
+} 
+
+.prev{ 
+	width: 80px;  
+	height: 52px;  
+	background: url(../img/btn.png) no-repeat;  
+	position: absolute;  
+	z-index: 3001;  
+	top: 160px;  
+	left: 10px;  
+	cursor: pointer; 
+	filter: alpha(opacity:0);  
+	opacity: 0;
+} 
+
+.next{  
+	width: 80px; 
+	height: 52px;  
+	background: url(../img/btn.png) no-repeat -80px 0px;  
+	position: absolute;  
+	z-index: 3001;  
+	top: 160px;  
+	right: 10px; 
+	cursor: pointer; 
+	filter: alpha(opacity:0);  
+	opacity: 0;  
+} 
+
+.small_pic{  
+	width: 594px; 
+	height: 144px;
+	position: relative;
+	top: 0;left: 0; 
+	border: 3px solid paleturquoise;
+	overflow: hidden;
+}
+
+.small_pic ul{  
+	width: 594px;  
+	height: 144px;  
+	position: absolute; 
+	left: 0px;
+	top: 0px;
+} 
+
+.small_pic li img{  
+	width: 194px;  
+	height: 140px;   
+} 
+
+.small_pic ul li{  
+	border:2px solid paleturquoise;
+	width: 194px; 
+	height: 140px;  
+	float: left;  
+	cursor: pointer;  
+	filter: alpha(opacity:60);  
+	opacity: 0.6;  
+}
