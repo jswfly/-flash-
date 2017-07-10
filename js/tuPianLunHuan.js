@@ -140,8 +140,9 @@ function move(obj,iTarget,name){
 		}else{             
 			if(name=='opacity'){
 //				设置透明度
-				obj.style.opacity=(cur+speed)/100;                 
-				obj.style.filter='alpha(opacity:'+cur+speed+')';             
+				obj.style.opacity=(cur+speed)/100;  
+				var cur2 = cur+speed;
+				obj.style.filter='alpha(opacity:'+cur2+')';    //兼容<ie8             
 			}else{
 				//这里用来设置left的
 				obj.style[name]=cur+speed+"px";             
